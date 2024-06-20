@@ -15,7 +15,7 @@ const contractAbi = JSON.parse(
     .toString()
 );
 
-app.get('/contract-details', (req, res) => {
+app.get('/create-token-contract', (req, res) => {
   res.json({
     abi: contractAbi.abi,
     bytecode: contractAbi.bytecode,
